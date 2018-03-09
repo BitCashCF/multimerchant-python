@@ -19,6 +19,21 @@ from ..network import DogecoinMainNet
 from ..network import DogecoinTestNet
 from ..network import LitecoinMainNet
 from ..network import LitecoinTestNet
+from ..network import ViacoinMainNet
+from ..network import BitcoinGoldMainNet
+from ..network import DashMainNet
+from ..network import ZCashMainNet
+from ..network import BitcoinCashMainNet
+from ..network import VertcoinMainNet
+from ..network import PeercoinMainNet
+from ..network import DigibyteMainNet
+from ..network import PosWalletMainNet
+from ..network import PivXMainNet
+from ..network import QtumMainNet
+from ..network import StratisMainNet
+from ..network import StealthcoinMainNet
+from ..network import KomodoMainNet
+from ..network import HCashMainNet
 
 from .keys import incompatible_network_exception_factory
 from .keys import PrivateKey
@@ -657,6 +672,36 @@ class Wallet(object):
             response = LitecoinMainNet
         elif network == "litecoin_testnet" or network == "LTCTEST":
             response = LitecoinTestNet
+        elif network == "viacoin" :
+            response = ViacoinMainNet
+        elif network == "bitcoin_gold" :
+            response = BitcoinGoldMainNet
+        elif network == "dash" :
+            response = DashMainNet
+        elif network == "zcash":
+            response = ZCashMainNet
+        elif network == "bitcoin_cash":
+            response =  BitcoinCashMainNet
+        elif network == "vertcoin":
+            response =  VertcoinMainNet
+        elif network == "peercoin":
+            response =  PeercoinMainNet
+        elif network == "digibyte":
+            response =  DigibyteMainNet
+        elif network == "posw":
+            response =  PosWalletMainNet
+        elif network == "pivx":
+            response =  PivXMainNet
+        elif network == "qtum":
+            response =  QtumMainNet
+        elif network == "stratis":
+            response =  StratisMainNet
+        elif network == "stealthcoin":
+            response =  StealthcoinMainNet
+        elif network == "komodo":
+            response =  KomodoMainNet
+        elif network == "hcash":
+            response =  HCashMainNet
         else:
             response = network
 
